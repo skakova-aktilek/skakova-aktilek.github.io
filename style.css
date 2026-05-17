@@ -362,10 +362,15 @@ img {
   padding: 110px 0;
 }
 
-.skills-grid-detailed {
+.skills-layout {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.skill-column {
+  background: transparent;
 }
 
 .skill-column h3 {
@@ -415,6 +420,10 @@ img {
 .skill-card-detailed p {
   color: #a9a9b0;
   font-size: 14px;
+}
+
+.language-column {
+  grid-column: span 1;
 }
 
 /* PROJECTS */
