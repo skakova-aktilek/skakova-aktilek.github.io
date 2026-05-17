@@ -75,21 +75,22 @@ img {
 /* HERO */
 .split-hero {
   width: 86%;
+  max-width: 1450px;
   margin: 0 auto;
-  padding: 110px 0 95px;
+  padding: 95px 0 70px;
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) 340px;
-  gap: 56px;
-  align-items: start;
+  grid-template-columns: minmax(0, 850px) 280px;
+  gap: 90px;
+  align-items: center;
 }
 
 .hero-main {
-  max-width: 980px;
+  max-width: 850px;
 }
 
 .hero-side {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .eyebrow {
@@ -102,19 +103,19 @@ img {
 }
 
 .split-hero h1 {
-  font-size: clamp(56px, 8vw, 112px);
+  font-size: clamp(56px, 7vw, 100px);
   line-height: 1;
   letter-spacing: -4px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   color: #f2f2f4;
 }
 
 .large-intro {
-  max-width: 900px;
-  font-size: 22px;
-  line-height: 1.6;
+  max-width: 760px;
+  font-size: 21px;
+  line-height: 1.55;
   color: #d0d0d6;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .hero-buttons {
@@ -158,8 +159,7 @@ img {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
-  margin-top: 8px;
+  gap: 16px;
 }
 
 .hero-stats .stat-card {
@@ -167,22 +167,22 @@ img {
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 28px;
-  min-height: 150px;
+  min-height: 135px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .hero-stats .stat-card h3 {
-  font-size: 52px;
+  font-size: 48px;
   color: var(--accent);
   line-height: 1;
 }
 
 .hero-stats .stat-card p {
   color: var(--muted);
-  margin-top: 12px;
-  font-size: 18px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 /* GENERAL SECTIONS */
@@ -580,7 +580,8 @@ img {
 @media (max-width: 1100px) {
   .split-hero {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 34px;
+    padding: 75px 0 55px;
   }
 
   .hero-side {
@@ -588,7 +589,8 @@ img {
   }
 
   .hero-stats {
-    max-width: 360px;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact-section {
@@ -654,6 +656,7 @@ img {
   .hero-stats {
     width: 100%;
     max-width: 100%;
+    grid-template-columns: 1fr;
   }
 
   .hero-stats .stat-card {
