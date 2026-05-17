@@ -72,16 +72,17 @@ img {
   color: var(--accent);
 }
 
-/* HERO */
-.hero {
+/* SIMPLE HERO */
+.simple-hero {
   width: 86%;
   margin: 0 auto;
-  min-height: 88vh;
-  padding: 80px 0;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 70px;
-  align-items: center;
+  min-height: auto;
+  padding: 110px 0 80px;
+  display: block;
+}
+
+.full-width {
+  max-width: 1050px;
 }
 
 .eyebrow {
@@ -93,20 +94,19 @@ img {
   text-transform: uppercase;
 }
 
-.hero h1 {
-  max-width: 880px;
-  font-size: clamp(44px, 7vw, 92px);
-  line-height: 1.02;
+.simple-hero h1 {
+  font-size: clamp(52px, 8vw, 110px);
+  line-height: 1;
   letter-spacing: -3px;
   margin-bottom: 28px;
   color: #f2f2f4;
 }
 
-.hero-description {
-  max-width: 700px;
-  color: #b0b0b8;
-  font-size: 20px;
-  line-height: 1.55;
+.large-intro {
+  max-width: 980px;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #d0d0d6;
   margin-bottom: 34px;
 }
 
@@ -147,37 +147,29 @@ img {
   color: var(--accent);
 }
 
-.hero-card {
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  gap: 18px;
+  margin-top: 44px;
+}
+
+.hero-stats .stat-card {
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 28px;
-  overflow: hidden;
-  padding: 18px;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
-}
-
-.hero-card img {
-  height: 420px;
-  object-fit: cover;
   border-radius: 20px;
-  background: #292a31;
+  padding: 26px;
 }
 
-.hero-card-text {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 18px 6px 4px;
-  color: #c8c8ce;
-  font-weight: 700;
+.hero-stats .stat-card h3 {
+  font-size: 44px;
+  color: var(--accent);
+  line-height: 1;
 }
 
-.status-dot {
-  width: 11px;
-  height: 11px;
-  background: var(--accent);
-  border-radius: 50%;
-  box-shadow: 0 0 10px var(--accent);
+.hero-stats .stat-card p {
+  color: var(--muted);
+  margin-top: 10px;
 }
 
 /* GENERAL SECTIONS */
@@ -222,10 +214,8 @@ img {
 }
 
 /* ABOUT */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 0.8fr;
-  gap: 24px;
+.about-section .about-card {
+  max-width: 1050px;
 }
 
 .about-card {
@@ -235,33 +225,10 @@ img {
   padding: 34px;
 }
 
-.about-card p {
-  color: #d3d3d8;
+.about-section .about-card p {
   font-size: 21px;
-  line-height: 1.55;
-}
-
-.stats-grid {
-  display: grid;
-  gap: 18px;
-}
-
-.stat-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: 28px;
-}
-
-.stat-card h3 {
-  font-size: 44px;
-  color: var(--accent);
-  line-height: 1;
-}
-
-.stat-card p {
-  color: var(--muted);
-  margin-top: 10px;
+  line-height: 1.6;
+  color: #d3d3d8;
 }
 
 /* TIMELINE */
@@ -507,7 +474,7 @@ img {
   font-weight: 800;
 }
 
-/* PUBLICATIONS */
+/* RESEARCH */
 .publication-list {
   display: grid;
   gap: 18px;
@@ -620,18 +587,8 @@ img {
 }
 
 @media (max-width: 1100px) {
-  .hero,
-  .about-grid,
   .contact-section {
     grid-template-columns: 1fr;
-  }
-
-  .hero {
-    gap: 42px;
-  }
-
-  .hero-card {
-    max-width: 520px;
   }
 
   .projects-grid {
@@ -657,24 +614,21 @@ img {
     display: none;
   }
 
-  .hero,
+  .simple-hero,
   .section {
     width: 90%;
   }
 
-  .hero {
-    min-height: auto;
-    padding: 48px 0 30px;
-    grid-template-columns: 1fr;
+  .simple-hero {
+    padding: 60px 0 40px;
   }
 
-  .hero h1 {
-    font-size: 40px;
+  .simple-hero h1 {
+    font-size: 44px;
     letter-spacing: -1px;
-    line-height: 1.08;
   }
 
-  .hero-description {
+  .large-intro {
     font-size: 17px;
   }
 
@@ -687,14 +641,8 @@ img {
     width: 100%;
   }
 
-  .hero-card {
-    padding: 12px;
-    border-radius: 22px;
-  }
-
-  .hero-card img {
-    height: 320px;
-    border-radius: 16px;
+  .hero-stats {
+    grid-template-columns: 1fr;
   }
 
   .section {
@@ -724,12 +672,8 @@ img {
     padding: 24px;
   }
 
-  .about-card p {
+  .about-section .about-card p {
     font-size: 17px;
-  }
-
-  .stat-card h3 {
-    font-size: 36px;
   }
 
   .timeline-card {
@@ -796,16 +740,12 @@ img {
 
 /* VERY SMALL PHONES */
 @media (max-width: 420px) {
-  .hero h1 {
-    font-size: 34px;
+  .simple-hero h1 {
+    font-size: 36px;
   }
 
   .eyebrow {
     font-size: 12px;
-  }
-
-  .hero-card img {
-    height: 270px;
   }
 
   .skill-card-detailed {
