@@ -364,8 +364,8 @@ img {
 
 .skills-grid-detailed {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 22px;
 }
 
 .skill-column h3 {
@@ -558,7 +558,7 @@ img {
 }
 
 /* TABLET */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .skills-grid-detailed {
     grid-template-columns: repeat(3, 1fr);
   }
