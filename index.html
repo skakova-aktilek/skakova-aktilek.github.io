@@ -424,20 +424,38 @@
       </div>
 
       <div class="projects-grid">
+
         <article class="project-card large">
           <img src="project1.jpg" alt="Interactive Word Construction Device" />
           <div class="project-content">
-            <p class="project-category">Embedded PCB</p>
+            <p class="project-category">Custom Embedded PCB</p>
             <h3>Interactive Word Construction Device</h3>
+
             <p>
-              Designed and fabricated a custom PCB in Altium with power regulation,
-              MCU integration, SPI/I2C communication, GPIO-based letter control,
-              and SolidWorks enclosure design.
+              Designed, fabricated, and validated a custom embedded <strong>PCB in Altium Designer</strong>
+              including power regulation, MCU integration, and <strong>SPI / I2C</strong>
+              communication interfaces.
             </p>
+
+            <p>
+              Programmed C-based control logic using binary-encoded <strong>GPIO</strong> to represent
+              26 letters with minimal pins, and designed a <strong>SolidWorks</strong> enclosure
+              supporting full system integration and operation.
+            </p>
+
+            <div class="project-links">
+              <a href="https://ese5160.github.io/a11g-final-submission-s26-s26-t16-edge-vibe-1/" target="_blank">
+                Project Website
+              </a>
+            </div>
+
             <div class="tags">
               <span>PCB Design</span>
               <span>Embedded C</span>
-              <span>Altium</span>
+              <span>Altium Designer</span>
+              <span>SPI / I2C</span>
+              <span>GPIO</span>
+              <span>SolidWorks</span>
             </div>
           </div>
         </article>
@@ -447,89 +465,176 @@
           <div class="project-content">
             <p class="project-category">Motion Control</p>
             <h3>Glove-Based Motion Control System</h3>
+
             <p>
-              Real-time gesture interface using IMU, ATmega328P, C/Python firmware,
-              and USB transport.
+              Developed a real-time embedded human–machine interface using a
+              <strong>16-bit IMU</strong> and <strong>ATmega328P MCU</strong>, achieving
+              sub-10 ms latency through <strong>hybrid C and Python</strong> firmware
+              and signal processing.
             </p>
+
+            <p>
+              Designed and optimized a low-latency embedded signal-processing stack
+              including motion tracking, gesture inference, and USB transport running
+              in 3 ms per frame on an <strong>ATmega328P</strong>.
+            </p>
+
+            <p>
+              Integrated sensors and peripherals using digital
+              <strong>communication interfaces</strong> including I2C OLED display and
+              SPI, enabling real-time visualization of IMU data and system status.
+            </p>
+
+            <div class="project-links">
+              <a href="https://upenn-embedded.github.io/final-project-website-submission-f25-t13-f25-hands-on/index.html" target="_blank">
+                Project Website
+              </a>
+            </div>
+
             <div class="tags">
               <span>IMU</span>
-              <span>Firmware</span>
+              <span>ATmega328P</span>
+              <span>Embedded C</span>
               <span>Python</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="project3.jpg" alt="Mouse Control Project" />
-          <div class="project-content">
-            <p class="project-category">Firmware + Python</p>
-            <h3>Mouse Control Project</h3>
-            <p>
-              Translated embedded USB and motion data into real-time computer cursor control.
-            </p>
-            <div class="tags">
+              <span>I2C / SPI</span>
               <span>USB</span>
-              <span>HID</span>
-              <span>Python</span>
             </div>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="project4.jpg" alt="Optical Biosensor" />
+          <img src="project3.jpg" alt="Fruit Color and Ripeness Detection System" />
           <div class="project-content">
-            <p class="project-category">Biosensors</p>
-            <h3>Portable Optical Biosensor</h3>
+            <p class="project-category">IoT / Computer Vision</p>
+            <h3>Fruit Color and Ripeness Detection System</h3>
+
             <p>
-              Low-cost polymer optical fiber sensing with smartphone-based image analysis
-              for biomarker detection.
+              Developed a smart fruit-sensing system designed to assist color-blind
+              individuals in identifying fruit type and ripeness using color and spectral analysis.
             </p>
+
+            <p>
+              Integrated sensing, embedded processing, display feedback, and audio feedback
+              to create an accessible hardware-software system for real-world use.
+            </p>
+
             <div class="tags">
-              <span>Biosensors</span>
-              <span>POF</span>
-              <span>Smartphone</span>
+              <span>C++</span>
+              <span>IoT</span>
+              <span>Sensors</span>
+              <span>Color Analysis</span>
+              <span>Audio Feedback</span>
+              <span>Display</span>
             </div>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="project5.jpg" alt="Alstom Reliability Case" />
+          <img src="project4.jpg" alt="ANC for MRI" />
           <div class="project-content">
-            <p class="project-category">Reliability</p>
-            <h3>Alstom RIOM Reliability Case</h3>
+            <p class="project-category">Signal Processing</p>
+            <h3>ANC for MRI</h3>
+
             <p>
-              Found voltage incompatibility between RIOM and contactor, enabling
-              a lower-cost fix and reducing repeated failures.
+              Studied and implemented Active Noise Control (ANC) techniques for biomedical
+              applications, focusing on suppressing high-amplitude acoustic noise in MRI environments.
             </p>
+
+            <p>
+              Implemented adaptive control algorithms including FxLMS, FxNLMS, and FxVSSLMS
+              in <strong>MATLAB / Simulink</strong>, achieving up to <strong>37.4 dB</strong>
+              noise attenuation.
+            </p>
+
             <div class="tags">
-              <span>Root Cause</span>
+              <span>MATLAB</span>
+              <span>Simulink</span>
+              <span>ANC</span>
+              <span>Signal Processing</span>
+              <span>Digital Filtering</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="project5.jpg" alt="Alstom HV Battery Reliability Case" />
+          <div class="project-content">
+            <p class="project-category">Industrial Reliability</p>
+            <h3>Alstom HV Battery Reliability Case</h3>
+
+            <p>
+              Delivered a <strong>70%</strong> reduction in <strong>high-voltage (HV) battery</strong>
+              failure incidents by redesigning locomotive battery reconditioning procedures.
+            </p>
+
+            <p>
+              Restored 600/1,000 cells and avoided approximately <strong>$60k</strong> in
+              replacement costs through improved maintenance and reconditioning processes.
+            </p>
+
+            <div class="tags">
+              <span>HV Battery</span>
               <span>Reliability</span>
-              <span>Engineering</span>
+              <span>Root Cause Analysis</span>
+              <span>Maintenance</span>
+              <span>Cost Reduction</span>
             </div>
           </div>
         </article>
 
         <article class="project-card">
-          <img src="project6.jpg" alt="UPenn Front-End Work" />
+          <img src="project6.jpg" alt="Alstom HVAC Reliability Case" />
           <div class="project-content">
-            <p class="project-category">Front-End</p>
-            <h3>UPenn Engineering Websites</h3>
+            <p class="project-category">Industrial Electrical Systems</p>
+            <h3>Alstom HVAC Reliability Case</h3>
+
             <p>
-              Front-end contributions for University of Pennsylvania Engineering websites.
+              Conducted electrical <strong>performance simulations</strong> and validation of
+              HVAC fan systems under operating conditions.
             </p>
-            <div class="project-links">
-              <a href="https://be.seas.upenn.edu/" target="_blank">BE Website</a>
-              <a href="https://cbe.seas.upenn.edu/" target="_blank">CBE Website</a>
-              <a href="https://www.cis.upenn.edu/" target="_blank">CIS Website</a>
-              <a href="https://www.ese.upenn.edu/" target="_blank">ESE Website</a>
-            </div>
+
+            <p>
+              Contributed to a <strong>50%</strong> reduction in HVAC-related repair events,
+              increasing operational reliability of locomotive systems.
+            </p>
+
             <div class="tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Front-End</span>
+              <span>HVAC</span>
+              <span>Electrical Simulation</span>
+              <span>Validation</span>
+              <span>Reliability</span>
+              <span>Alstom</span>
             </div>
           </div>
         </article>
+
+        <article class="project-card">
+          <img src="project7.jpg" alt="Alstom RIOM Reliability Case" />
+          <div class="project-content">
+            <p class="project-category">Root Cause Analysis</p>
+            <h3>Alstom RIOM Reliability Case</h3>
+
+            <p>
+              Identified a <strong>contactor–voltage mismatch</strong> as the root cause of
+              recurring RIOM malfunctions by analyzing fleet-wide failure data.
+            </p>
+
+            <p>
+              Proposed a lower-cost corrective campaign by replacing incompatible contactors,
+              preventing continuous RIOM activation and avoiding <strong>$40–50k</strong>
+              in downtime costs.
+            </p>
+
+            <div class="tags">
+              <span>RIOM</span>
+              <span>Contactor</span>
+              <span>Voltage Mismatch</span>
+              <span>Failure Analysis</span>
+              <span>Alstom</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
