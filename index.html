@@ -8,326 +8,238 @@
 </head>
 
 <body>
-  <header class="nav">
-    <div class="logo">Aidana Bissen</div>
-    <div class="nav-links">
+  <aside class="sidebar">
+    <div>
+      <img src="profile.jpg" class="profile-img" alt="Aidana Bissen">
+      <h2>Aidana Bissen</h2>
+      <p>Electrical Engineering · Embedded Systems · PCB Design</p>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#timeline">Timeline</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
-    </div>
-  </header>
+    </nav>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
+    <a href="resume.pdf" class="resume-btn" target="_blank">Download CV</a>
+  </aside>
+
+  <main class="content">
+    <section id="home" class="hero">
       <div class="hero-text">
-        <div class="available">
-          <span></span>
-          Available for work
-        </div>
-
-        <h1>AIDANA<br>BISSEN</h1>
-
+        <span class="badge">Available for work</span>
+        <h1>Building hardware-software systems from idea to prototype.</h1>
         <p>
-          Electrical Engineering graduate student focused on embedded systems,
-          PCB design, firmware development, biosensors, and front-end interfaces.
+          I work across embedded firmware, PCB design, sensing systems,
+          front-end interfaces, and engineering reliability improvement.
         </p>
 
-        <div class="hero-buttons">
-          <a href="resume.pdf" class="btn primary" target="_blank">Download CV</a>
-          <a href="#projects" class="btn secondary">View Projects</a>
+        <div class="hero-actions">
+          <a href="#projects" class="primary-btn">View Projects</a>
+          <a href="#contact" class="secondary-btn">Contact Me</a>
         </div>
       </div>
 
-      <div class="hero-image-box">
-        <img src="profile.jpg" alt="Profile photo" />
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about-card">
-      <p>
-        Welcome! I’m Aidana, an Electrical Engineering student with hands-on
-        experience in embedded systems, custom PCB design, firmware development,
-        hardware debugging, optical biosensors, and front-end web development.
-        I enjoy building complete systems that connect hardware, software, and
-        real-world engineering problem solving.
-      </p>
-
-      <div class="stats">
-        <div>
-          <h2>10<span>+</span></h2>
-          <p>Projects done</p>
+      <div class="hero-panel">
+        <div class="panel-row">
+          <span>Focus</span>
+          <strong>Embedded Systems</strong>
         </div>
-        <div>
-          <h2>4<span>+</span></h2>
-          <p>Years experience</p>
+        <div class="panel-row">
+          <span>Tools</span>
+          <strong>Altium · C · Python · MATLAB</strong>
         </div>
-        <div>
-          <h2>3</h2>
-          <p>Publications</p>
+        <div class="panel-row">
+          <span>Experience</span>
+          <strong>Research · Industry · Front-End</strong>
         </div>
       </div>
     </section>
 
-    <!-- TIMELINE -->
-    <section id="timeline" class="section">
-      <h2 class="section-title">Timeline</h2>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-box">
+        <p>
+          I am an Electrical Engineering student with hands-on experience in embedded systems,
+          PCB design, firmware development, optical biosensors, front-end web development,
+          and engineering troubleshooting. I enjoy building complete systems where hardware,
+          software, and real-world constraints have to work together.
+        </p>
 
-      <div class="tabs">
-        <button class="tab active" onclick="showTab('education')">Education</button>
-        <button class="tab" onclick="showTab('work')">Work Experience</button>
-      </div>
-
-      <div id="education" class="tab-content active">
-        <div class="timeline-card">
+        <div class="stats">
           <div>
-            <h3>M.S. Electrical Engineering</h3>
-            <p>University of Pennsylvania</p>
-            <span>2025 – Present</span>
+            <h3>10+</h3>
+            <p>Projects</p>
           </div>
-        </div>
-
-        <div class="timeline-card">
           <div>
-            <h3>B.Sc. Electrical and Computer Engineering</h3>
-            <p>Nazarbayev University</p>
-            <span>Completed</span>
+            <h3>4+</h3>
+            <p>Years experience</p>
           </div>
-        </div>
-      </div>
-
-      <div id="work" class="tab-content">
-        <div class="timeline-card">
           <div>
-            <h3>Engineer Technologist</h3>
-            <p>Alstom — locomotive systems, troubleshooting, reliability improvement</p>
-            <span>1 year 3 months</span>
-          </div>
-        </div>
-
-        <div class="timeline-card">
-          <div>
-            <h3>Research Assistant</h3>
-            <p>Biosensors, optical sensing, polymer optical fiber systems</p>
-            <span>3 years</span>
-          </div>
-        </div>
-
-        <div class="timeline-card">
-          <div>
-            <h3>Front-End Contributor</h3>
-            <p>UPenn Engineering websites</p>
-            <span>Web development</span>
+            <h3>3</h3>
+            <p>Publications</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">2025 – Present</span>
+          <h3>M.S. Electrical Engineering</h3>
+          <p>University of Pennsylvania</p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="date">Industry</span>
+          <h3>Engineer Technologist — Alstom</h3>
+          <p>
+            Worked on locomotive systems, troubleshooting, reliability improvement,
+            and root-cause analysis for technical failures.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="date">Research</span>
+          <h3>Research Assistant</h3>
+          <p>
+            Worked on optical biosensors, polymer optical fiber systems, smartphone-based
+            sensing, and biomarker detection.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="date">Web</span>
+          <h3>Front-End Contributor</h3>
+          <p>
+            Contributed to UPenn Engineering websites:
+            <a href="https://be.seas.upenn.edu/" target="_blank">BE</a> and
+            <a href="https://cbe.seas.upenn.edu/" target="_blank">CBE</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="skills" class="section">
-      <h2 class="section-title">Skills and Technologies</h2>
-      <p class="section-subtitle">
-        Tools and technologies I use across embedded systems, hardware design,
-        research, and software development.
-      </p>
+      <h2>Skills</h2>
 
       <div class="skills-grid">
-        <div class="skill-column">
+        <div class="skill-box">
           <h3>Hardware</h3>
-          <div class="skill-card">ATmega328P</div>
-          <div class="skill-card">SiWG917 / SiWx917</div>
-          <div class="skill-card">ESP32</div>
-          <div class="skill-card">Raspberry Pi</div>
-          <div class="skill-card">Sensors / IMU / I2C / SPI</div>
+          <p>ATmega328P, SiWG917, ESP32, Raspberry Pi, IMU, sensors, I2C, SPI</p>
         </div>
 
-        <div class="skill-column">
-          <h3>Design Software</h3>
-          <div class="skill-card">Altium Designer</div>
-          <div class="skill-card">SolidWorks</div>
-          <div class="skill-card">KiCad</div>
-          <div class="skill-card">Primavera P6</div>
+        <div class="skill-box">
+          <h3>PCB / CAD</h3>
+          <p>Altium Designer, KiCad, SolidWorks, circuit debugging, enclosure design</p>
         </div>
 
-        <div class="skill-column">
+        <div class="skill-box">
           <h3>Programming</h3>
-          <div class="skill-card">C / Embedded C</div>
-          <div class="skill-card">C++</div>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">MATLAB</div>
-          <div class="skill-card">HTML / CSS / JavaScript</div>
+          <p>C, Embedded C, C++, Python, MATLAB, HTML, CSS, JavaScript</p>
         </div>
 
-        <div class="skill-column">
+        <div class="skill-box">
           <h3>Data / Tools</h3>
-          <div class="skill-card">Power BI</div>
-          <div class="skill-card">SQL</div>
-          <div class="skill-card">Linux</div>
-          <div class="skill-card">Git / GitHub</div>
-          <div class="skill-card">Node-RED / MQTT</div>
+          <p>Power BI, SQL, Linux, GitHub, Node-RED, MQTT, Azure VM</p>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
-      <h2 class="section-title">My Portfolio Highlights</h2>
+      <h2>Selected Projects</h2>
 
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="project1.jpg" alt="Interactive Word Construction Device" />
-          <div class="project-info">
+      <div class="project-grid">
+        <article class="project-card large">
+          <img src="project1.jpg" alt="Interactive Word Construction Device">
+          <div>
+            <span>Embedded PCB</span>
             <h3>Interactive Word Construction Device</h3>
             <p>
-              Custom embedded PCB designed in Altium with MCU integration,
-              SPI/I2C interfaces, GPIO-based letter control, and SolidWorks enclosure.
+              Designed and fabricated a custom PCB in Altium with MCU integration,
+              SPI/I2C communication, GPIO-based letter control, and SolidWorks enclosure.
             </p>
-            <div class="tags">
-              <span>PCB Design</span>
-              <span>Embedded C</span>
-              <span>Altium</span>
-            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="project-card">
-          <img src="project2.jpg" alt="Glove Motion Control" />
-          <div class="project-info">
+        <article class="project-card">
+          <img src="project2.jpg" alt="Glove-Based Motion Control">
+          <div>
+            <span>Motion Control</span>
             <h3>Glove-Based Motion Control System</h3>
-            <p>
-              Real-time motion-control interface using a 16-bit IMU and ATmega328P
-              with C/Python firmware and USB transport.
-            </p>
-            <div class="tags">
-              <span>IMU</span>
-              <span>Firmware</span>
-              <span>Python</span>
-            </div>
+            <p>Real-time gesture interface using IMU, ATmega328P, C/Python firmware, and USB transport.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="project-card">
-          <img src="project3.jpg" alt="Mouse Control Project" />
-          <div class="project-info">
+        <article class="project-card">
+          <img src="project3.jpg" alt="Mouse Control Project">
+          <div>
+            <span>Firmware + Python</span>
             <h3>Mouse Control Project</h3>
-            <p>
-              Translated embedded device motion and USB data into real-time
-              computer cursor actions using firmware and Python.
-            </p>
-            <div class="tags">
-              <span>USB</span>
-              <span>HID</span>
-              <span>Python</span>
-            </div>
+            <p>Translated embedded USB/motion data into real-time cursor control.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="project-card">
-          <img src="project4.jpg" alt="Optical Biosensor" />
-          <div class="project-info">
+        <article class="project-card">
+          <img src="project4.jpg" alt="Optical Biosensor">
+          <div>
+            <span>Biosensors</span>
             <h3>Portable Optical Biosensor</h3>
-            <p>
-              Low-cost polymer optical fiber sensing system integrated with
-              smartphone-based image analysis for biomarker detection.
-            </p>
-            <div class="tags">
-              <span>Biosensors</span>
-              <span>POF</span>
-              <span>Smartphone</span>
-            </div>
+            <p>Low-cost polymer optical fiber sensing with smartphone-based image analysis.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="project-card">
-          <img src="project5.jpg" alt="Alstom RIOM Case" />
-          <div class="project-info">
+        <article class="project-card">
+          <img src="project5.jpg" alt="Alstom Reliability Case">
+          <div>
+            <span>Reliability</span>
             <h3>Alstom RIOM Reliability Case</h3>
-            <p>
-              Investigated recurring RIOM failures and identified voltage
-              incompatibility with contactors, enabling a lower-cost fix.
-            </p>
-            <div class="tags">
-              <span>Root Cause</span>
-              <span>Reliability</span>
-              <span>Engineering</span>
-            </div>
+            <p>Found voltage incompatibility between RIOM and contactor, enabling a lower-cost fix.</p>
           </div>
-        </div>
-
-        <div class="project-card">
-          <img src="project6.jpg" alt="UPenn Front-End Work" />
-          <div class="project-info">
-            <h3>UPenn Engineering Front-End Work</h3>
-            <p>
-              Front-end web contributions for University of Pennsylvania
-              Engineering department websites.
-            </p>
-            <div class="tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Front-End</span>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!-- PUBLICATIONS -->
     <section id="publications" class="section">
-      <h2 class="section-title">Publications</h2>
+      <h2>Publications</h2>
 
-      <div class="publication-card">
-        <h3>Design and Development of Portable IoT-Integrated Optical Fiber Biosensors</h3>
-        <p>Review / research work</p>
-        <span>Biosensors and optical sensing</span>
-      </div>
+      <div class="publication-list">
+        <div>
+          <h3>Design and Development of Portable IoT-Integrated Optical Fiber Biosensors</h3>
+          <p>Biosensors / Optical Sensing</p>
+        </div>
 
-      <div class="publication-card">
-        <h3>Optical Fiber Biosensors for Biomarker Detection</h3>
-        <p>Research publication</p>
-        <span>Biomedical sensing</span>
-      </div>
+        <div>
+          <h3>Optical Fiber Biosensors for Biomarker Detection</h3>
+          <p>Biomedical Sensing</p>
+        </div>
 
-      <div class="publication-card">
-        <h3>Conference Paper in Biosensors / Optical Systems</h3>
-        <p>Conference contribution</p>
-        <span>Engineering research</span>
+        <div>
+          <h3>Conference Paper in Biosensors / Optical Systems</h3>
+          <p>Engineering Research</p>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact-section">
-      <div class="contact-text">
-        <h2>Let’s work<br>together</h2>
-        <p>
-          Reach out to discuss embedded systems, PCB design, firmware,
-          research, or front-end opportunities.
-        </p>
+    <section id="contact" class="section contact">
+      <h2>Let’s connect</h2>
+      <p>
+        Open to embedded systems, PCB design, firmware, research, and front-end opportunities.
+      </p>
 
-        <div class="socials">
-          <a href="https://github.com/" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-          <a href="mailto:aidana.bissen@nu.edu.kz">Email</a>
-        </div>
+      <div class="contact-links">
+        <a href="mailto:aidana.bissen@nu.edu.kz">Email</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
       </div>
-
-      <form class="contact-form">
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
     </section>
   </main>
-
-  <footer>
-    <h2>Let’s work together today!</h2>
-    <p>© 2026 Aidana Bissen</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
