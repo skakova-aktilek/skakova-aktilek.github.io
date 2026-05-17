@@ -436,6 +436,7 @@ img {
 .project-content p {
   color: var(--muted);
   line-height: 1.5;
+  margin-bottom: 12px;
 }
 
 .tags {
