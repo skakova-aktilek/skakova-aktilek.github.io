@@ -59,7 +59,7 @@ img {
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 18px;
 }
 
 .nav-links a {
@@ -364,13 +364,9 @@ img {
 
 .skills-layout {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 34px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 26px;
   align-items: start;
-}
-
-.skill-column {
-  background: transparent;
 }
 
 .skill-column h3 {
@@ -420,10 +416,6 @@ img {
 .skill-card-detailed p {
   color: #a9a9b0;
   font-size: 14px;
-}
-
-.language-column {
-  grid-column: span 1;
 }
 
 /* PROJECTS */
@@ -531,6 +523,45 @@ img {
   color: var(--muted);
 }
 
+/* LANGUAGE SKILLS */
+.language-section {
+  padding-top: 80px;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.language-card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transition: 0.25s ease;
+}
+
+.language-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  background: var(--card-light);
+}
+
+.language-card h3 {
+  font-size: 22px;
+  color: #f0f0f2;
+  margin-bottom: 4px;
+}
+
+.language-card p {
+  color: var(--muted);
+  font-size: 16px;
+}
+
 /* CONTACT */
 .contact-section {
   background: var(--card);
@@ -567,13 +598,16 @@ img {
 }
 
 /* TABLET */
-@media (max-width: 760px) {
+@media (max-width: 1300px) {
   .skills-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
-}
 
   .coursework-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .language-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -715,7 +749,8 @@ img {
 
   .coursework-grid,
   .projects-grid,
-  .skills-grid-detailed {
+  .skills-layout,
+  .language-grid {
     grid-template-columns: 1fr;
   }
 
