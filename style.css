@@ -567,10 +567,11 @@ img {
 }
 
 /* TABLET */
-@media (max-width: 1400px) {
-  .skills-grid-detailed {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 760px) {
+  .skills-layout {
+    grid-template-columns: 1fr;
   }
+}
 
   .coursework-grid {
     grid-template-columns: repeat(2, 1fr);
