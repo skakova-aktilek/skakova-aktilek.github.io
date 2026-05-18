@@ -3,172 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aktilek Skakova | Portfolio</title>
+  <title>Aktilek Skakova</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <header class="navbar">
-    <a href="#home" class="logo">Aktilek Skakova</a>
 
-    <nav class="nav-links">
-      <a href="#timeline">Timeline</a>
-      <a href="#coursework">Coursework</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#languages">Languages</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- HERO SECTION -->
+  <section class="hero container">
+    <div class="hero-main">
+      <h1>Aktilek Skakova</h1>
+      <p>
+        I'm Aktilek Skakova, a graduate student at the University of Pennsylvania in Electrical Engineering, 
+        with a strong focus on embedded systems, firmware development, and PCB design. 
+        My work spans firmware engineering, PCBA design, edge computing, industrial troubleshooting, and embedded systems prototyping. 
+        I bring a multidisciplinary approach to solving real-world problems and have contributed to academic research, industry projects, and technical engineering projects.
+      </p>
+      <div class="header-buttons">
+        <a href="resume.pdf">Download CV</a>
+        <a href="#projects" class="secondary">View Projects</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="stats">
+        <div class="stat">
+          <h2>15+</h2>
+          <p>Projects</p>
+        </div>
+        <div class="stat">
+          <h2>5+</h2>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero split-hero">
-      <div class="hero-main">
-        <p class="eyebrow">Electrical Engineering · Embedded Systems · PCB Design</p>
+  <!-- TIMELINE / WORK EXPERIENCE -->
+  <section id="timeline" class="section container">
+    <div class="section-header">
+      <p class="section-label">Timeline</p>
+      <h2>Education & Work Experience</h2>
+    </div>
 
-        <h1>Aktilek Skakova</h1>
+    <div class="timeline-list">
 
-        <p class="hero-description large-intro">
-          I'm Aktilek Skakova, a graduate student at the University of Pennsylvania in
-          Electrical Engineering, with a strong focus on embedded systems, firmware
-          development, and PCB design. I have hands-on experience designing
-          hardware-software solutions ranging from smart IoT devices to system-level
-          inference pipelines. My work spans firmware engineering, PCBA design, edge
-          computing, industrial troubleshooting, and embedded systems prototyping. I bring
-          a multidisciplinary approach to solving real-world problems and have contributed
-          to academic research, industry projects, and technical engineering projects.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="resume.pdf" class="btn btn-primary" target="_blank">Download CV</a>
-          <a href="#projects" class="btn btn-secondary">View Projects</a>
+      <!-- Education -->
+      <div class="timeline-group">
+        <h3 class="timeline-group-title">Education</h3>
+        <div class="timeline-card">
+          <h3>M.S. Electrical Engineering</h3>
+          <p>University of Pennsylvania</p>
+          <span>Jan 2025 – Dec 2026</span>
+        </div>
+        <div class="timeline-card">
+          <h3>B.Sc. Electrical and Computer Engineering</h3>
+          <p>Nazarbayev University</p>
+          <span>Aug 2020 – Jun 2024</span>
         </div>
       </div>
 
-      <div class="hero-side">
-        <div class="hero-stats">
-          <div class="stat-card">
-            <h3>15+</h3>
-            <p>Projects</p>
-          </div>
+      <!-- Work Experience -->
+      <div class="timeline-group">
+        <h3 class="timeline-group-title">Work Experience</h3>
 
-          <div class="stat-card">
-            <h3>5+</h3>
-            <p>Years of experience</p>
+        <!-- Front-End Engineer -->
+        <div class="timeline-card">
+          <h3>Front-End Engineer</h3>
+          <p>University of Pennsylvania — Penn Engineering Websites</p>
+          <ul class="timeline-bullets">
+            <li>Worked on Penn Engineering websites, supporting front-end updates, content structure, and page maintenance.</li>
+          </ul>
+          <div class="timeline-links">
+            <a href="https://be.seas.upenn.edu/" target="_blank">BE Website</a>
+            <a href="https://cbe.seas.upenn.edu/" target="_blank">CBE Website</a>
+            <a href="https://www.cis.upenn.edu/" target="_blank">CIS Website</a>
+            <a href="https://www.ese.upenn.edu/" target="_blank">ESE Website</a>
           </div>
+          <span>Sep 2025 – Present</span>
         </div>
-      </div>
-    </section>
-    
-    <!-- TIMELINE -->
-    <section id="timeline" class="section">
-      <div class="section-header">
-        <p class="section-label">Timeline</p>
-        <h2>Education and Work Experience</h2>
-      </div>
-    
-      <div class="timeline-list">
-    
-        <!-- Education -->
-        <div class="timeline-group">
-          <h3 class="timeline-group-title">Education</h3>
-    
-          <div class="timeline-card">
-            <div>
-              <h3>M.S. Electrical Engineering</h3>
-              <p>University of Pennsylvania</p>
-            </div>
-            <span>Jan 2025 – Dec 2026</span>
-          </div>
-    
-          <div class="timeline-card">
-            <div>
-              <h3>B.Sc. Electrical and Computer Engineering</h3>
-              <p>Nazarbayev University</p>
-            </div>
-            <span>Aug 2020 – Jun 2024</span>
-          </div>
+
+        <!-- Teaching Assistant -->
+        <div class="timeline-card">
+          <h3>Teaching Assistant — Engineering Leadership</h3>
+          <p>University of Pennsylvania</p>
+          <ul class="timeline-bullets">
+            <li>Supported a class of 50 students in Electrical Engineering.</li>
+            <li>Held weekly office hours to guide students on assignments and case analyses.</li>
+            <li>Evaluated student submissions and provided detailed feedback.</li>
+          </ul>
+          <span>Jan 2026 – May 2026</span>
         </div>
-    
-        <!-- Work Experience -->
-        <div class="timeline-group">
-          <h3 class="timeline-group-title">Work Experience</h3>
-    
-          <!-- Front-End Engineer -->
-          <div class="timeline-card">
-            <div>
-              <h3>Front-End Engineer</h3>
-              <p>University of Pennsylvania — Penn Engineering Websites</p>
-              <ul class="timeline-bullets">
-                <li>Worked on Penn Engineering websites, supporting front-end updates, content structure, and web page maintenance across department sites.</li>
-              </ul>
-              <div class="timeline-links">
-                <a href="https://be.seas.upenn.edu/" target="_blank">BE Website</a>
-                <a href="https://cbe.seas.upenn.edu/" target="_blank">CBE Website</a>
-                <a href="https://www.cis.upenn.edu/" target="_blank">CIS Website</a>
-                <a href="https://www.ese.upenn.edu/" target="_blank">ESE Website</a>
-              </div>
-            </div>
-            <span>Sep 2025 – Present</span>
-          </div>
-    
-          <!-- Teaching Assistant -->
-          <div class="timeline-card">
-            <div>
-              <h3>Teaching Assistant — Engineering Leadership</h3>
-              <p>University of Pennsylvania</p>
-              <ul class="timeline-bullets">
-                <li>Supported a class of 50 students in Electrical Engineering.</li>
-                <li>Held weekly office hours to guide students on assignments and case analyses.</li>
-                <li>Evaluated student submissions and provided detailed feedback.</li>
-              </ul>
-            </div>
-            <span>Jan 2026 – May 2026</span>
-          </div>
-    
-          <!-- Alstom Engineer -->
-          <div class="timeline-card">
-            <div>
-              <h3>Electrical Engineer</h3>
-              <p>Alstom Electro-locomotives Company</p>
-              <ul class="timeline-bullets">
-                <li>Delivered a <strong>70%</strong> reduction in high-voltage (HV) battery failure incidents by redesigning locomotive battery reconditioning procedures, restoring 600/1,000 cells and avoiding $60k in replacement costs</li>
-                <li>Led localization of low-voltage (LV) electrical systems and HVAC maintenance by establishing in-house repair protocols; utilized <strong>5 Whys, Ishikawa</strong>, and <strong>8D</strong> methodologies for root cause analysis</li>
-                <li>Conducted electrical performance simulations and validation of HVAC fan systems under operating conditions, contributing to a <strong>50%</strong> reduction in HVAC-related repair events increasing operational reliability</li>
-                <li>Identified a <strong>contactor–voltage mismatch</strong> as the root cause of recurring RIOM malfunctions by analyzing fleet-wide failure data, preventing continuous RIOM activation and avoiding $40–50k in downtime costs</li>
-              </ul>
-            </div>
-            <span>Feb 2024 – Aug 2025</span>
-          </div>
-    
-          <!-- Alstom Intern -->
-          <div class="timeline-card">
-            <div>
-              <h3>Electrical Engineer Intern</h3>
-              <p>Alstom Electro-locomotives Company</p>
-              <ul class="timeline-bullets">
-                <li>Evaluated alternatives for obsolete low-voltage (LV) electrical components and localization, assessing compatibility and integration impact, and documenting results in a cross-referenced database using <strong>SAP ERP</strong></li>
-              </ul>
-            </div>
-            <span>May 2023 – Aug 2023</span>
-          </div>
-    
-          <!-- Research Assistant -->
-          <div class="timeline-card">
-            <div>
-              <h3>Research Assistant: Applications of Signal Processing lab, ASP-LAB</h3>
-              <ul class="timeline-bullets">
-                <li>Developed an adaptive Active Noise Control (ANC) system using <strong>signal decomposition and digital filtering</strong> techniques to suppress high-amplitude acoustic signals in MRI environments</li>
-                <li>Implemented and evaluated adaptive control algorithms (FxLMS, FxNLMS, FxVSSLMS) in <strong>MATLAB / Simulink</strong>, achieving up to <strong>37.4 dB</strong> noise attenuation (80%) analyzing system stability and real-time performance</li>
-              </ul>
-            </div>
-            <span>Jan 2021 – June 2024</span>
-          </div>
-    
+
+        <!-- Alstom Engineer -->
+        <div class="timeline-card">
+          <h3>Electrical Engineer</h3>
+          <p>Alstom Electro-locomotives Company</p>
+          <ul class="timeline-bullets">
+            <li>Reduced HV battery failures by 70%, restoring 600/1,000 cells and avoiding $60k replacement costs.</li>
+            <li>Localized LV systems and HVAC maintenance using 5 Whys, Ishikawa, and 8D methodologies.</li>
+            <li>Simulated and validated HVAC fan performance, reducing repair events by 50%.</li>
+            <li>Identified contactor–voltage mismatch causing RIOM malfunctions; corrected to avoid $40–50k downtime costs.</li>
+          </ul>
+          <span>Feb 2024 – Aug 2025</span>
         </div>
+
+        <!-- Alstom Intern -->
+        <div class="timeline-card">
+          <h3>Electrical Engineer Intern</h3>
+          <p>Alstom Electro-locomotives Company</p>
+          <ul class="timeline-bullets">
+            <li>Evaluated obsolete LV components for compatibility and integration; documented results in SAP ERP.</li>
+          </ul>
+          <span>May 2023 – Aug 2023</span>
+        </div>
+
+        <!-- Research Assistant -->
+        <div class="timeline-card">
+          <h3>Research Assistant — ASP-LAB</h3>
+          <ul class="timeline-bullets">
+            <li>Developed adaptive Active Noise Control (ANC) system using signal decomposition and digital filtering in MATLAB/Simulink.</li>
+            <li>Implemented FxLMS, FxNLMS, FxVSSLMS algorithms achieving 37.4 dB noise attenuation, analyzing stability and real-time performance.</li>
+          </ul>
+          <span>Jan 2021 – Jun 2024</span>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- COURSEWORK -->
     <section id="coursework" class="section">
