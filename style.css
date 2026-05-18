@@ -74,18 +74,18 @@ img {
 
 /* HERO */
 .split-hero {
-  width: 92%;
+  width: 86%;
   max-width: 1450px;
   margin: 0 auto;
   padding: 95px 0 70px;
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-columns: 280px minmax(0, 1fr);
   gap: 80px;
   align-items: start;
 }
 
 .hero-main {
-  max-width: 850px;
+  max-width: 760px;
 }
 
 .hero-side {
@@ -99,13 +99,13 @@ img {
 
 .hero-photo {
   width: 100%;
-  max-width: 320px;
+  max-width: 280px;
 }
 
 .hero-photo img {
   width: 100%;
   height: auto;
-  max-height: 420px;
+  max-height: 380px;
   border-radius: 28px;
   border: 1px solid var(--border);
   object-fit: cover;
