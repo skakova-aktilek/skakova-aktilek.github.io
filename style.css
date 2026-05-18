@@ -74,12 +74,12 @@ img {
 
 /* HERO */
 .split-hero {
-  width: 86%;
+  width: 92%;
   max-width: 1450px;
   margin: 0 auto;
   padding: 95px 0 70px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-columns: minmax(0, 1fr) 320px;
   gap: 80px;
   align-items: center;
 }
@@ -99,12 +99,13 @@ img {
 
 .hero-photo {
   width: 100%;
-  max-width: 260px;
+  max-width: 320px;
 }
 
 .hero-photo img {
   width: 100%;
   height: auto;
+  max-height: 420px;
   border-radius: 28px;
   border: 1px solid var(--border);
   object-fit: cover;
@@ -205,7 +206,7 @@ img {
 
 /* GENERAL SECTIONS */
 .section {
-  width: 86%;
+  width: 92%;
   margin: 0 auto;
   padding: 95px 0;
 }
