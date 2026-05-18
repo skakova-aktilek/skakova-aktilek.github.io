@@ -79,9 +79,9 @@ img {
   margin: 0 auto;
   padding: 95px 0 70px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
+  grid-template-columns: 320px minmax(0, 1fr);
   gap: 80px;
-  align-items: center;
+  align-items: start;
 }
 
 .hero-main {
@@ -93,8 +93,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .hero-photo {
