@@ -409,13 +409,16 @@ img {
 }
 
 .project-card img {
-  height: 260px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
   object-fit: cover;
   background: #292a31;
 }
 
 .project-card.large img {
-  height: 360px;
+  aspect-ratio: 16 / 7;
+  height: auto;
 }
 
 .project-content {
