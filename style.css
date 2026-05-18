@@ -79,8 +79,8 @@ img {
   margin: 0 auto;
   padding: 95px 0 70px;
   display: grid;
-  grid-template-columns: minmax(0, 850px) 280px;
-  gap: 90px;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 80px;
   align-items: center;
 }
 
@@ -89,8 +89,9 @@ img {
 }
 
 .hero-side {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .eyebrow {
@@ -156,7 +157,7 @@ img {
 }
 
 .hero-stats {
-  width: 100%;
+  width: 280px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -466,29 +467,6 @@ img {
   font-weight: 800;
 }
 
-/* RESEARCH */
-.publication-list {
-  display: grid;
-  gap: 18px;
-}
-
-.publication-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 28px;
-  text-align: center;
-}
-
-.publication-card h3 {
-  font-size: 23px;
-  margin-bottom: 10px;
-}
-
-.publication-card p {
-  color: var(--muted);
-}
-
 /* LANGUAGE SKILLS */
 .language-section {
   padding-top: 80px;
@@ -585,12 +563,20 @@ img {
     padding: 75px 0 55px;
   }
 
+  .hero-main {
+    max-width: 100%;
+  }
+
+  .large-intro {
+    max-width: 100%;
+  }
+
   .hero-side {
     justify-content: flex-start;
   }
 
   .hero-stats {
-    max-width: 100%;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -638,6 +624,7 @@ img {
 
   .large-intro {
     font-size: 17px;
+    max-width: 100%;
   }
 
   .hero-buttons {
@@ -656,7 +643,6 @@ img {
 
   .hero-stats {
     width: 100%;
-    max-width: 100%;
     grid-template-columns: 1fr;
   }
 
